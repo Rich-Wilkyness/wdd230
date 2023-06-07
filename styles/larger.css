@@ -1,0 +1,9 @@
+@media (min-width: 700px) {
+    nav {
+        flex-direction: row;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

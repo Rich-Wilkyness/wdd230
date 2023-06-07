@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, R. Christian Wilkerson, course assignment portal">
+    <meta name="author" content="Richard Christian Wilkerson">
+    <title>R. Christian Wilkerson - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
 </head>
 <body>
-    
+    <header>
+        <img src="images/profilepic.jpg" alt="picture of author" id="header-image">
+        <h1>R. Christian Wilkerson</h1>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Chamber</a>
+        <a href="">Site Plan</a>
+        <a href="">Survey</a>
+    </nav>
+    <main>
+        <h2>WDD 230 - Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li><a href="">activity1</a></li>
+                <li><a href="">activity2</a></li>
+                <li><a href="">activity3</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <h4>weather</h4>
+            <h4>number of visits</h4>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
