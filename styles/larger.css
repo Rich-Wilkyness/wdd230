@@ -1,7 +1,17 @@
 @media (min-width: 700px) {
-    nav {
-        flex-direction: row;
-    }
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	nav a {
+		flex-direction: row;
+		text-align: center;
+		display: block;
+	}
+
+	#menu-links {
+		display: flex;
+	}
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;

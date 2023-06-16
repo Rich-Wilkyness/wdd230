@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- https://rich-wilkyness.github.io/wdd230/ -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,28 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R. Christian Wilkerson - WDD 230 - Web Frontend Development</title>
 
-    9 ink rel="stylesheet" href="styles/normalize.css">    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./logo.ico">
 
     <meta property="og:title" content="R. Christian Wilkerson Home Page">
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:image" content="images/opengraph.png">
     <meta property="og:url" content="https://rich-wilkyness.github.io/wdd230/">
-    <meta name="twitter:card" content="images/opengraph.png">
-<!-- https://rich-wilkyness.github.io/wdd230/ -->
+    <!-- <meta name="twitter:card" content="images/opengraph.png"> -->
 </head>
 <body>
     <header>
         <img src="images/profilepic.jpg" alt="picture of author" id="header-image">
         <h1>R. Christian Wilkerson</h1>
+        <div id="mode">
+            ☑️
+        </div>
     </header>
     <nav>
-        <a href="">Home</a>
-        <a href="">Chamber</a>
-        <a href="week01/chamber-site-plan.html">Site Plan</a>
-        <a href="">Survey</a>
+        <button id="menu"></button>
+        <div id="menu-links">
+            <a href="">Home</a>
+            <a href="">Chamber</a>
+            <a href="week01/chamber-site-plan.html">Site Plan</a>
+            <a href="">Survey</a>
+        </div>
     </nav>
     <main>
         <h2>WDD 230 - Web Frontend Development</h2>
@@ -41,8 +50,8 @@
         </section>
         <section class="card">
             <h3>Information</h3>
-            <h4>weather</h4>
-            <h4>number of visits</h4>
+            <p>Weather</p>
+            <p>Number of Visits</p>
         </section>
     </main>
     <footer>
@@ -50,5 +59,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamNav.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 </html>
