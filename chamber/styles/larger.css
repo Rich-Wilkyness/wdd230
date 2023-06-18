@@ -1,0 +1,29 @@
+@media (min-width: 700px) {
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	nav a {
+		flex-direction: row;
+		text-align: center;
+		display: block;
+	}
+
+	#menu-links {
+		display: flex;
+	}
+	#hero img {
+		width: 800px;
+	}
+	#first {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 1rem;
+	}
+	#adds img {
+		width: 600px;
+	}
+	#calendar {
+		align-self: start;
+	}
+}

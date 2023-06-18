@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!-- https://rich-wilkyness.github.io/wdd230/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development, R. Christian Wilkerson, Chamber Home Page">
+    <meta name="author" content="Richard Christian Wilkerson">    <title>R. Christian Wilkerson - WDD 230 - Ririe City Commerce Home Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="./ririe-favicon.ico">
+
+    <meta property="og:title" content="Ririe City Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ririe-community-hall.jpg">
+    <meta property="og:url" content="https://rich-wilkyness.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <img src="images/ririe-logo.gif" alt="city of Ririe logo" id="header-image">
+        <h1>Ririe Chamber of Commerce</h1>
+
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <div id="menu-links">
+            <a href="">Home</a>
+            <a href="">Discover</a>
+            <a href="">Directory</a>
+            <a href="">Join</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="hero">
+            <img src="images/river.jpg" alt="ririe snake river">
+            <h1>Ririe Snake River</h1>
+        </div>
+        <div class="break">"</div>
+        <section id="first">
+            <div id="adds">
+                <img src="images/zip-lining.jpg" alt="ririe snake river">
+                <h2>Heise Zip Lining</h2>
+            </div>
+            <div id="calendar">
+                <h2>Events</h2>
+            </div>
+        </section>
+        <div class="break">"</div>
+        <section id="second">
+            <h2>About</h2>
+            <p>"Discover the endless possibilities in Ririe! Join the Ririe Chamber of Commerce today and unlock a world of opportunities for your business. Connect with like-minded entrepreneurs, access valuable resources, and gain a competitive edge in our thriving business community. Together, let's shape the future of Ririe. Take the first step towards success. Join the Ririe Chamber of Commerce now!"</p>
+            <button>Join Now</button>
+        </section>
+        <div class="break">"</div>
+        <section id="third">
+            <h2>Weather</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/ham-nav.js"></script>
+</body>
+</html>

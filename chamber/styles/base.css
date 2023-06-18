@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root {
+    --font-color-ondark: #E7DAE1;
+    --font-color-onlight: #5B2333;
+    --primary-color: #E7DAE1 ;
+    --secondary-color: #5B2333 ;
+    --accent1-color: #fff;
+    --accent2-color: #F7F3F5;
+    --button-color: #FFD700;
+
+    --heading-font: 'Source Serif 4', serif;
+    --paragraph-font: "Lato", sans-serif;
+}
+body {
+    background-color: var(--accent1-color);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--font-color-onlight);
+}
+header {
+    font-family: var(--heading-font);
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+#header-image {
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    }
+nav a {
+    color: var(--font-color-ondark);
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+}
+nav a:link, nav a:visited {
+    color: var(--font-color-ondark);
+}
+nav a:hover {
+    color: var(--font-color-onlight);
+    background-color: var(--button-color);
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+}
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+#menu-links {
+    display: none;
+}
+#menu-links.open {
+    display: flex;
+    flex-direction: column;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+#hero img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 360px;
+    margin: 0 auto;
+}
+#hero h1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: white;
+    text-align: center;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+#first {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#adds {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1/2;
+    color: white;
+    justify-items: center;
+    place-items: center;
+    align-self: center;
+}
+
+#adds h2 {
+    grid-area: 1/2;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+}
+#adds img {
+    width: 360px;
+    grid-area: 1/2;
+}
+
+#calendar {
+    margin: 1rem;
+}
+.break {
+    background-color: var(--secondary-color);
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 75%;
+}
+#second button {
+    background-color: var(--button-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 25%;
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .8px;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+#second button:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Adjust values to achieve desired shadow effect */
+    transform: scale(1.2); /* Adjust the scale factor as per your preference */
+    transition: background-color 0.5s ease; /* Replace background-color with the desired property and adjust duration and easing as needed */
+    background-color: #FFE033;
+}
+#third {
+    text-align: center;
+}
+
+footer {
+    font-family: var(--paragraph-font);
+    display: grid;
+    flex: auto;
+    margin: auto auto;
+    justify-items: center;
+    align-items: center;
+}
