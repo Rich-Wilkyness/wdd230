@@ -107,7 +107,7 @@ main {
 #adds {
     grid-column: 1/2;
     display: grid;
-    grid-template-columns: 1/2;
+    grid-template-columns: 1fr;
     color: white;
     justify-items: center;
     place-items: center;
