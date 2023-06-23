@@ -102,6 +102,17 @@ main {
     width: 75%;
     margin: 0 auto;
 }
+#temple {
+    grid-column: 1/3;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+#temple img {
+    width: 100%;
+    height: auto;
+}
 main h2 {
     background-color: var(--accent1-color);
     font-family: var(--heading-font);
@@ -157,6 +168,14 @@ section ul li a:hover {
 }
 section p {
     padding-left: 2rem;
+}
+#maps {
+    grid-column: 1/3;
+    margin: 0 auto;
+}
+#maps iframe {
+    width: 100%;
+    height: auto;
 }
 footer {
     font-family: var(--paragraph-font);

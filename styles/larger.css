@@ -16,4 +16,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+	#maps iframe {
+		width: 500px;
+		height: 450px;
+	}
 }
