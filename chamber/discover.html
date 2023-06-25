@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!-- https://rich-wilkyness.github.io/wdd230/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development, R. Christian Wilkerson, Chamber Home Page">
+    <meta name="author" content="Richard Christian Wilkerson">    
+    <title>R. Christian Wilkerson - WDD 230 - Ririe City Commerce Home Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="./ririe-favicon.ico">
+
+    <meta property="og:title" content="Ririe Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/ririe-community-hall.jpg">
+    <meta property="og:url" content="https://rich-wilkyness.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/ririe-logo.gif" alt="city of Ririe logo" id="header-image">
+        <h1>Ririe Chamber of Commerce</h1>
+
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="">Directory</a>
+            <a href="">Join</a>
+        </div>
+    </nav>
+
+    <main id="discover-main">
+        <section id="discover-info">
+            <div class="last-visited">
+                <p id="visited"></p>
+            </div>
+        </section>
+        <section id="discover-gallery">
+            <picture>
+                <source media="(max-width: 700px)" srcset="images/zip-lining-500.webp">
+                <img src="images/zip-lining-700.webp" alt="zip-lining" width="700" height="467" loading="lazy">
+                <h1>Heise Zip-Lining</h1>
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/">
+                <img src="images/fishing-700.webp" alt="fishing" width="700" height="467" loading="lazy">
+                <h1>Fishing</h1>
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/">
+                <img src="images/heise-pool-slide-700.webp" alt="heise swimming" width="700" height="467" loading="lazy">
+                <h1>Heise Swimming</h1>
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/">
+                <img src="images/heise-golf-lodge2-700.webp" alt="heise golfing" width="700" height="467" loading="lazy">
+                <h1>Heise Golfing</h1>
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/">
+                <img src="images/snow-boarding-700.webp" alt="kelly canyon snow boarding" width="700" height="467" loading="lazy">
+                <h1>Kelly Canyon Snow Boarding</h1>
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/">
+                <img src="images/blacktail-ririe-reservoir-700.webp" alt="ririe reservoir" width="700" height="467" loading="lazy">
+                <h1>Ririe Blacktail Park Reservoir</h1>
+            </picture>
+        </section>
+    </main>
+    <footer>
+        <p>###-###-#### ririeChamber@gmail.com</p>
+        <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/ham-nav.js"></script>
+    <script src="scripts/latest-visit.js"></script>
+</body>
+</html>
