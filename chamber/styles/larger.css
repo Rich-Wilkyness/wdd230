@@ -28,14 +28,16 @@
 	}
 	#discover-main {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 2fr;
+	}
+	#discover-info div {
+		width: 500px;
 	}
 	#discover-gallery img {
 		grid-row: 1/2;
 		grid-column: 1/2;
 		width: 700px;
 	}
-	
 	#discover-gallery h1 {
 		grid-row: 1/2;
 		grid-column: 1/2;
