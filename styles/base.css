@@ -108,12 +108,23 @@ main {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 #temple img {
     width: 100%;
     height: auto;
 }
-main h2 {
+#temple h2 {
+    font-family: var(--paragraph-font);
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin: 10px; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+}
+#home-title {
     background-color: var(--accent1-color);
     font-family: var(--heading-font);
     color: var(--font-color-onlight);
@@ -154,11 +165,11 @@ section ul {
     flex-direction: column;
 }
 section ul li {
-    padding: .25rem;
+    padding: .4rem;
 }
 section ul li a {
     text-decoration: none;
-    padding: .25rem;
+    padding: .2rem;
 }
 section ul li a:visited {
     color: var(--font-color-onlight);
