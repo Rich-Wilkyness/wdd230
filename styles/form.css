@@ -1,0 +1,69 @@
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: darkblue;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: darkred;
+    font-size: .8rem;
+}
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px darkgray;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+.slide {
+	display: block;
+	font-size: .8rem;
+	padding-top: 1rem;
+}
+
+#rating {
+	width: 350px;
+	margin-bottom: 0;
+}
+#range-value {
+	font-size: 2rem;
+	color: navy;
+}
+#range-values {
+	font-size: 1rem;
+	display: flex;
+	margin: 0 5px;
+	width: 350px;
+}
+#range-values option {
+	flex: 1 1 auto;
+	margin-right: 21px;
+}
+form input.submitButton {
+    border: none;
+    background-color: darkred;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+	transition: transform 0.3s ease;
+
+}
+form input.submitButton:hover {
+	background-color: rgb(212, 31, 31);
+	transform: scale(1.1);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week04 Team Form</title>
+    <meta name="author" content="Richard Christian Wilkerson">
+    <meta name="description" content="Team built form">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <div id="formmessage"></div>
+    <h1>Rate This Page</h1>
+    <form method="get" action="record.html">
+    <fieldset>
+        <legend>Applicant Information</legend>
+        <label class="top">Username<input type="text" name="name" required></label>
+
+        <label class="top">Password<input type="password" name="pwd" pattern="[A-Za-z0-9]{8,}" placeholder="alphanumeric, 8 character minimum" id="psw1" required></label>
+
+        <label class="top">Password Confirmation<input type="password" name="pwd confirmation" pattern="[A-Za-z0-9]{8,}" id="psw2" required></label>
+
+        <label class="top" id="email">Email<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+
+        <label class="slide">Page Rating<div id="range-value">5</div><input type="range" min="0" max="10" value="5" step="1" list="range-values" name="page rating" id="rating"> 
+        <datalist id="range-values">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </datalist>
+        </label>
+
+    </fieldset>
+        <input type="submit" value="Rate Page" class="submitButton">
+    </form>
+    <script src="scripts/password-check.js"></script>
+    <script src="scripts/rating.js"></script>
+</body>
+</html>
