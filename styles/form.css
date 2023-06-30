@@ -4,13 +4,13 @@
 	--small-font-color: darkred;
 }
 
-h1 {
+form h1 {
 	color: var(--large-font-color);
 }
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid --border-color;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: .5rem 2%;
 }

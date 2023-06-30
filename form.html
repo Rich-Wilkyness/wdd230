@@ -7,8 +7,26 @@
     <meta name="author" content="Richard Christian Wilkerson">
     <meta name="description" content="Team built form">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
+    <header>
+        <img src="images/profilepic.jpg" alt="picture of author" id="header-image">
+        <h1>R. Christian Wilkerson</h1>
+        <div id="mode">
+            ☑️
+        </div>
+    </header>
+    <nav>
+        <button id="menu" role="button" tabindex="0" aria-label="Menu" aria-expanded="false"></button>
+        <div id="menu-links">
+            <a href="">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="week01/chamber-site-plan.html">Site Plan</a>
+            <a href="">Survey</a>
+        </div>
+    </nav>
     <div id="formmessage"></div>
     <h1>Rate This Page</h1>
     <form method="get" action="record.html">
@@ -41,7 +59,13 @@
     </fieldset>
         <input type="submit" value="Rate Page" class="submitButton">
     </form>
+    <footer>
+        <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
     <script src="scripts/password-check.js"></script>
     <script src="scripts/rating.js"></script>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/menu-keyboard.js"></script>
 </body>
 </html>
