@@ -1,18 +1,28 @@
+:root {
+	--border-color: black;
+	--large-font-color: darkblue;
+	--small-font-color: darkred;
+}
+
+h1 {
+	color: var(--large-font-color);
+}
+
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid black;
+    border: 1px solid --border-color;
     border-radius: 10px;
     padding: .5rem 2%;
 }
 form legend {
-    color: darkblue;
+    color: var(--large-font-color);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
 form label.top {
     display: block;
     padding-top: 1rem;
-    color: darkred;
+    color: var(--small-font-color);
     font-size: .8rem;
 }
 form label.top input {
@@ -28,6 +38,7 @@ form label.top input {
     background-color: rgba(0, 0, 0, .1);
 }
 .slide {
+	color: var(--small-font-color);
 	display: block;
 	font-size: .8rem;
 	padding-top: 1rem;
