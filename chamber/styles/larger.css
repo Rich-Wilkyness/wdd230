@@ -50,4 +50,23 @@
 		background-color: #5B2333;
 		text-align: center;
 	}
+
+	/* ----------- FORM ------------ */
+	#join-main {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		width: 90%;
+	}
+	form {
+		width: 50%;
+	}
+	#membership-details {
+		padding: 1rem;
+		padding-top: 3rem;
+	}
+	#membership-details fieldset{
+		margin: 0 auto;
+		width: 90%;
+		height: fit-content;
+	}
 }

@@ -12,6 +12,12 @@
     --heading-font: 'Source Serif 4', serif;
     --paragraph-font: "Lato", sans-serif;
 }
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+p, a{
+    font-family: var(--paragraph-font);
+}
 body {
     background-color: var(--accent1-color);
 }
@@ -28,8 +34,8 @@ header {
     align-items: center;
 }
 #header-image {
-    width: 100px;
-    height: 100px;
+    width: 93px;
+    height: 77px;
     margin: 1rem;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -214,8 +220,101 @@ main {
   transform: scale(1.1);
 }
 
+/* ------------ FORM -------------- */
+form {
+    margin: 0 auto;
+    width: 90%;
+}
 
+form h1 {
+    text-align: center;
+	color: var(--font-color-onlight);
+}
 
+#join-main fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+#join-main legend {
+    color: var(--font-color-onlight);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: var(--font-color-onlight);
+    font-size: .8rem;
+}
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px darkgray;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+form label.top input:required {
+    border-left: darkred solid 6px;
+}
+form label.top input:required:valid {
+    border-left: darkgreen solid 6px;
+}
+#membership {
+    padding: 1.5rem 0 0 0;
+    font-size: .8rem;
+    color: var(--font-color-onlight);
+}
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+#org-description {
+    display: block;
+    width: 90%;
+    font-size: 1rem;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+form input.submitButton {
+    border-color: var(--secondary-color);
+    background-color: var(--button-color);
+    color: var(--font-color-onlight);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 50%;
+    max-width: 20rem;
+	transition: transform 0.3s ease;
+
+}
+form input.submitButton:hover {
+	transform: scale(1.1);
+}
+#membership-details {
+    display: flex;
+    padding: 1rem;
+    align-self: center;
+}
+#membership-details fieldset{
+    margin: 0 auto;
+    width: 90%;
+    height: fit-content;
+}
+#thank {
+    width: 60%;
+    text-align: center;
+    padding: 3rem;
+}
 footer {
     font-family: var(--paragraph-font);
     display: grid;

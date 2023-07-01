@@ -188,6 +188,7 @@ section p {
     width: 100%;
     height: auto;
 }
+
 footer {
     font-family: var(--paragraph-font);
     display: grid;
