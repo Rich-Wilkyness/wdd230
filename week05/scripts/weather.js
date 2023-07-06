@@ -23,11 +23,11 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.temp}&deg;F`;
-    const iconsrc = 'https://openweathermap.org/img/w/${data.icon}.png';
-    let desc = data.weather[0].icon;
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    let desc = data.weather[0].description;
     weatherIcon.setAttribute('src',iconsrc);
-    weatherIcon.setAttribute('alt',data.description);
+    weatherIcon.setAttribute('alt',desc);
     captionDesc.textContent = `${desc}`;
 }
 

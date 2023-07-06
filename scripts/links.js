@@ -7,8 +7,7 @@ async function getLinks() {
         const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
-            displayLinks(data);
+            displayLinks(data.weeks);
         } else {
             throw new Error("Failed to fetch links");
         }
@@ -19,7 +18,7 @@ async function getLinks() {
 
 function displayLinks(weeks) {
     weeks.forEach((week) => {
-        const weekHeader = document.createElement("h2");
+        const weekHeader = document.createElement("h4");
         weekHeader.textContent = week.week;
         weekElement.appendChild(weekHeader);
         const weekList = document.createElement("ul");
