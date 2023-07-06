@@ -1,0 +1,97 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "Holygrail"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "Media Queries"
+          },
+          {
+            "url": "week01/chamber-site-plan.html",
+            "title": "Chamber Site Plan"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/bom.html",
+            "title": "Book of Mormon"
+          },
+          {
+            "url": "week02/design.html",
+            "title": "Design"
+          },
+          {
+            "url": "https://codepen.io/Rich-Wilkyness/pen/vYQLXeG?editors=0010",
+            "title": "Week02 CodePen"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/images/landscape.webp",
+            "title": "WebP"
+          },
+          {
+            "url": "week03/lazyload.html",
+            "title": "Lazy Load"
+          },
+          {
+            "url": "week03/responsive-images.html",
+            "title": "Responsive Images"
+          },
+          {
+            "url": "week03/bom.html",
+            "title": "Web Storage"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "https://codepen.io/Rich-Wilkyness/pen/abQJdLm?editors=1100",
+            "title": "Pseudo-class"
+          },
+          {
+            "url": "week04/tablebuild.html",
+            "title": "Table"
+          },
+          {
+            "url": "week04/form-start/index.html",
+            "title": "Form"
+          },
+          {
+            "url": "form.html",
+            "title": "Team Form"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "https://codepen.io/Rich-Wilkyness/pen/qBQXYyB",
+            "title": "Week05 CodePen"
+          },
+          {
+            "url": "week05/new-ward-members.json",
+            "title": "json file"
+          },
+          {
+            "url": "week05/prophets.html",
+            "title": "Prophets"
+          }
+        ]
+      }
+    ]
+  }
