@@ -159,13 +159,17 @@ main h3 {
     border-radius: 10px;
     background-color: var(--primary-color);
 }
+section h4 {
+    padding: 0 1rem;
+    margin-bottom: 0;
+}
 section ul {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
 section ul li {
-    padding: .4rem;
+    padding: 0 0 .8rem 0;
 }
 section ul li a {
     text-decoration: none;
@@ -177,8 +181,16 @@ section ul li a:visited {
 section ul li a:hover {
     background-color: var(--button-color);
 }
-section p {
-    padding-left: 2rem;
+#information {
+    text-align: center;
+}
+#information figure {
+    border-bottom: 3px solid var(--primary-color);
+    padding: 0 0 1rem 0;
+    background-color: var(--primary-color);
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 30%;
 }
 #maps {
     grid-column: 1/3;
