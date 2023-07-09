@@ -315,6 +315,24 @@ form input.submitButton:hover {
     text-align: center;
     padding: 3rem;
 }
+.toggle-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-icons img {
+    width: 35px;
+    height: 35px;
+    margin: .2rem;
+}
+.image-button {
+    margin: .4rem;
+    border: 3px solid var(--secondary-color);
+    background-color: white;
+}
+.image-button:hover {
+    background-color: var(--primary-color);
+}
 footer {
     font-family: var(--paragraph-font);
     display: grid;
