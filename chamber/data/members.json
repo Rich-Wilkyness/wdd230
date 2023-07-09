@@ -5,7 +5,7 @@
         "address": "5116 East Heise Road, Ririe ID, 83442, USA",
         "phone": "208-538-7312",
         "website": "https://www.heisehotsprings.net",
-        "icon": "heise-icon.webp",
+        "icon": "images/heise-icon.webp",
         "membershipLevel": "Gold",
         "type": "Resort",
         "message": "We are a summer resort with hot spring pools, pizza parlor, golfing (9 holes), and a 350 ft. enclosed water slide. Lots of fun, fun, fun for all the family."
@@ -15,7 +15,7 @@
         "address": "5488 Kelly Canyon Rd, Ririe ID, 83442, USA",
         "phone": "208-701-2817",
         "website": "https://www.kellycanyonresort.com",
-        "icon": "kelly-canyon-icon.webp",
+        "icon": "images/kelly-canyon-icon.webp",
         "membershipLevel": "Silver",
         "type": "Ski Resort",
         "message": "Long-running ski resort boasts 640 acres of terrain & groomed runs, plus a half pipe for boarders."
@@ -25,7 +25,7 @@
         "address": "201 S. State, Ririe ID, 83442, USA",
         "phone": "208-745-6498",
         "website": "https://stores.truevalue.com/id/",
-        "icon": "scottys-icon.webp",
+        "icon": "images/scottys-icon.webp",
         "membershipLevel": "Bronze",
         "type": "Hardware Store",
         "message": "Hardware, lawn, garden, farm, and power equipment supplies as well as auto parts and small engine repair"
@@ -35,7 +35,7 @@
         "address": "217 W. Ririe Hwy, Ririe ID, 83442, USA",
         "phone": "307-690-4800",
         "website": "https://www.ririecarwash.com",
-        "icon": "car-wash-icon.webp",
+        "icon": "images/car-wash-icon.webp",
         "membershipLevel": "Silver",
         "type": "Car Wash, Storage",
         "message": "Storage facility consisting of 20 enclosed units and 15 RV Units."
@@ -45,7 +45,7 @@
         "address": "105 N 5050 E, Ririe ID, 83442, USA",
         "phone": "208-523-6339",
         "website": "https://www.aspengroveinn.com",
-        "icon": "aspen-grove-icon.webp",
+        "icon": "images/aspen-grove-icon.webp",
         "membershipLevel": "Gold",
         "type": "Hotel",
         "message": "Deluxe Cabins, RV Park/Campground, Fly Casting pond, Lodge and Open-air Pavilion. Beautiful property for weddings, reunions, and get-aways. Breakfast included with cabin stays."
@@ -55,7 +55,7 @@
         "address": "339 Main Street, Ririe ID, 83442, USA",
         "phone": "208-538-7226",
         "website": "https://www.sweetsurrender.com",
-        "icon": "sweet-surrender-icon.webp",
+        "icon": "images/sweet-surrender-icon.webp",
         "membershipLevel": "Bronze",
         "type": "Bakery",
         "message": "We are open Mon-Fri for breakfast (until 11:00) and lunch. Hours are 10:00-4:00. We offer a variety of homemade breads, pastries, and lunch selections. We also do wedding cakes, some catering, and candy making for specialty orders."
@@ -65,7 +65,7 @@
         "address": "2080 Swan Valley Highway, Ririe ID, 83442, USA",
         "phone": "208-589-7147",
         "website": "http://www.swanvalleyretreat.com/",
-        "icon": "aspen-hills-icon.webp",
+        "icon": "images/aspen-hills-icon.webp",
         "membershipLevel": "Silver",
         "type": "Retreat Center",
         "message": "Aspen Hills Retreat can be your next unforgetable getaway! Set on 100 acres of meadows and Aspen/Pine  forest, this 4 bedroom, 2 bath home with huge deck is just perfect for relaxing and getting back in touch with nature. The seclusion and peace is great for families, reunions, weddings, fishing trips, and viewing wildlife. Skiing, swimming, horseback riding, ATV trails, and fishing are all within minutes! A vacationer's paradise in the mountains."

@@ -1,10 +1,10 @@
 const baseURL = "https://rich-wilkyness.github.io/wdd230/";
-const membersURL = "https://rich-wilkyness.github.io/wdd230/chambers/data/members.json";
+const membersURL = "https://rich-wilkyness.github.io/wdd230/chamber/data/members.json";
 const membersElement = document.getElementById("directory-members");
 
 async function getMembers() {
     try {
-        const response = await fetch(membersURLURL);
+        const response = await fetch(membersURL);
         if (response.ok) {
             const data = await response.json();
             displayMembers(data.members);
@@ -24,6 +24,7 @@ function displayMembers(members) {
         const address = document.createElement("p");
         const phone = document.createElement("p");
         const website = document.createElement("a");
+
 
 // -------- setting element values ---------
 
