@@ -315,6 +315,9 @@ form input.submitButton:hover {
     text-align: center;
     padding: 3rem;
 }
+
+/* ----- Directory ------ */
+
 .toggle-icons {
     display: flex;
     align-items: center;
@@ -325,14 +328,84 @@ form input.submitButton:hover {
     height: 35px;
     margin: .2rem;
 }
-.image-button {
+.grid-button, .list-button {
     margin: .4rem;
     border: 3px solid var(--secondary-color);
     background-color: white;
 }
-.image-button:hover {
+.grid-button:hover, .list-button:hover {
     background-color: var(--primary-color);
 }
+
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 10px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    height: 130px;
+	max-width: 100%;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+.grid section h4 {
+    display: none;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	margin: 0;
+	padding: 0.25rem;
+    width: 100%;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section:nth-child(even) {
+	background-color: var(--primary-color);
+}
+#directory-members {
+    margin: 1rem;
+}
+.list section h4 {
+	font-size: 1rem;
+}
+
+#directory-members section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+#directory-members section a {
+	font-size: 0.85rem;
+	color: var(--secondary-color);
+	letter-spacing: 1.1pt;
+}
+
+
 footer {
     font-family: var(--paragraph-font);
     display: grid;
