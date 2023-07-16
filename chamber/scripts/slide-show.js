@@ -27,38 +27,42 @@ function displayMembers(members) {
             const businessSource = document.createElement("source");
             const website = document.createElement("a");
             const pictureElement = document.createElement('picture');
+
+            // -------- setting element values ---------
+
+            memberElement.classList.add('mySlides');
+            memberElement.setAttribute('style', 'display: none;');
+
+            businessName.textContent = member.name; 
+
+            businessSource.setAttribute('media', '(max-width: 500px)');
+            businessSource.setAttribute('srcset', member.image500);
+
+            businessImg.setAttribute('src', member.image700);
+            businessImg.setAttribute('alt', `${member.name} Logo`);
+            businessImg.setAttribute('loading', 'lazy');
+            businessImg.setAttribute('width', '700px');
+            businessImg.setAttribute('height', 'auto');
+
+            website.setAttribute('href', member.website);
+
+    // --------- appending elements to document ---
+
+            website.appendChild(businessSource);
+            website.appendChild(businessImg);
+            pictureElement.appendChild(website);
+            memberElement.appendChild(pictureElement);
+            memberElement.appendChild(businessName);
+
+            slideshowElement.appendChild(memberElement);
         }
-
-
-
-// -------- setting element values ---------
-
-        businessName.textContent = member.name; 
-
-        businessSource.setAttribute('media', '(max-width: 500px)');
-        businessSource.setAttribute('srcset', member.image500);
-
-        businessImg.setAttribute('src', member.image700);
-        businessImg.setAttribute('alt', `${member.name} Logo`);
-        businessImg.setAttribute('loading', 'lazy');
-        businessImg.setAttribute('width', '700px');
-        businessImg.setAttribute('height', 'auto');
-
-        website.setAttribute('href', member.website);
-
-// --------- appending elements to document ---
-
-        website.appendChild(businessSource);
-        website.appendChild(businessImg);
-        pictureElement.appendChild(website);
-        memberElement.appendChild(pictureElement);
-        memberElement.appendChild(businessName);
-
-        slideshowElement.appendChild(memberElement);
     });
 }
 
 getMembers();
+
+
+
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -66,6 +70,7 @@ showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
 showSlides(slideIndex += n);
+document.getElementById("placeholder").style.display = "none";
 }
 
 // Thumbnail image controls
@@ -73,7 +78,7 @@ function currentSlide(n) {
 showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+async function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
 
@@ -84,10 +89,13 @@ function showSlides(n) {
         slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].setAttribute('style', "display: none");
     }
 
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].setAttribute('style', "display: block");
 }
-
+setInterval(() => {
+    plusSlides(1);
+    document.getElementById("placeholder").style.display = "none";
+}, 15000);
 

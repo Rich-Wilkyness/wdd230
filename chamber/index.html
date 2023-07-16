@@ -19,7 +19,7 @@
 
     <meta property="og:title" content="Ririe Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="chamber/images/ririe-community-hall.jpg">
+    <meta property="og:image" content="chamber/images/ririe-community-hall-700.webp">
     <meta property="og:url" content="https://rich-wilkyness.github.io/wdd230/chamber/index.html">
 </head>
 <body>
@@ -39,20 +39,36 @@
     </nav>
 
     <main>
+        <div id="banner" class="banner">
+            <h2>Join us for the Chamber of Commerce Meet and Greet!</h2>
+            <p>Wednesday at 7:00 p.m.</p>
+            <button id="closeButton" onclick="closeBanner()">❌</button>
+        </div>
+
         <div id="hero">
-            <img src="images/river.webp" alt="ririe snake river">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/river-400">
+                <img src="images/river-800.webp" alt="ririe snake river">
+            </picture>
             <h1>Ririe Snake River</h1>
         </div>
+
         <div class="break"></div>
         <section id="first">
 
             <div id="slideshow-container">
+                <div id="placeholder" style="display: block;">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/ririe-community-hall-500">
+                        <img src="images/ririe-community-hall-700.webp" alt="Placeholder Image" width="600px" height="auto">
+                    </picture>
+                </div>
+                <div id="slideshow-buttons">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
 
-            </div>
-            <div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
 
 
 
@@ -112,6 +128,7 @@
         <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/banner-meeting.js"></script>
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/menu-keyboard.js"></script>
     <script src="scripts/weather.js"></script>

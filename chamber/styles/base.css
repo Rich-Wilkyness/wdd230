@@ -84,22 +84,27 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
+#banner {
+    text-align: center;
+}
+
 #hero {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1rem;
 }
 #hero img {
-    grid-row: 1/2;
-    grid-column: 1/2;
     width: 360px;
     margin: 0 auto;
 }
 #hero h1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
     color: white;
     text-align: center;
+}
+#hero picture, #hero h1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: center;
 }
 main {
     width: 90%;
@@ -109,24 +114,64 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-#adds {
-    grid-column: 1/2;
-    display: grid;
-    grid-template-columns: 1fr;
-    color: white;
-    justify-items: center;
-    place-items: center;
-    align-self: center;
+    justify-self: center;
+
 }
 
-#adds h2 {
-    grid-area: 1/2;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+#slideshow-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+	justify-items: flex-start;
+    padding: 2rem;
+    justify-items: center;
 }
-#adds img {
+#slideshow-container h2 {
+    color: white;
+    background-color: #5B2333;
+    text-align: center;
+    font-size: 26px;
     width: 360px;
-    grid-area: 1/2;
+
+}
+#slideshow-container img {
+    width: 360px;
+    height: auto;
+}
+
+#slideshow-container picture,
+#slideshow-container h2 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#slideshow-container div:hover picture,
+#slideshow-container div:hover h2 {
+  transform: scale(1.1);
+}
+
+#slideshow-buttons {
+    width: 360px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 45px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(189, 189, 189, 0.8);
 }
 
 #calendar {
