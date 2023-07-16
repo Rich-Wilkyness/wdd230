@@ -7,6 +7,8 @@
         "website": "https://www.heisehotsprings.net",
         "icon": "images/heise-icon.webp",
         "membershipLevel": "Gold",
+        "image500": "https://rich-wilkyness.github.io/wdd230/chamber/images/heise-hotsprings-500.webp",
+        "image700": "https://rich-wilkyness.github.io/wdd230/chamber/images/heise-hotsprings-700.webp",
         "type": "Resort",
         "message": "We are a summer resort with hot spring pools, pizza parlor, golfing (9 holes), and a 350 ft. enclosed water slide. Lots of fun, fun, fun for all the family."
       },
@@ -17,6 +19,8 @@
         "website": "https://www.kellycanyonresort.com",
         "icon": "images/kelly-canyon-icon.webp",
         "membershipLevel": "Silver",
+        "image500": "https://rich-wilkyness.github.io/wdd230/chamber/images/snow-boarding-500.webp",
+        "image700": "https://rich-wilkyness.github.io/wdd230/chamber/images/snow-boarding-700.webp",
         "type": "Ski Resort",
         "message": "Long-running ski resort boasts 640 acres of terrain & groomed runs, plus a half pipe for boarders."
       },
@@ -27,6 +31,8 @@
         "website": "https://stores.truevalue.com/id/",
         "icon": "images/true-value-icon.webp",
         "membershipLevel": "Bronze",
+        "image500": "",
+        "image700": "",
         "type": "Hardware Store",
         "message": "Hardware, lawn, garden, farm, and power equipment supplies as well as auto parts and small engine repair"
       },
@@ -36,7 +42,9 @@
         "phone": "307-690-4800",
         "website": "https://www.ririecarwash.com",
         "icon": "images/car-wash-icon.webp",
-        "membershipLevel": "Silver",
+        "membershipLevel": "Bronze",
+        "image500": "",
+        "image700": "",
         "type": "Car Wash, Storage",
         "message": "Storage facility consisting of 20 enclosed units and 15 RV Units."
       },
@@ -47,6 +55,8 @@
         "website": "https://www.aspengroveinn.com",
         "icon": "images/aspen-grove-icon.webp",
         "membershipLevel": "Gold",
+        "image500": "https://rich-wilkyness.github.io/wdd230/chamber/images/aspen-grove-inn-500.webp",
+        "image700": "https://rich-wilkyness.github.io/wdd230/chamber/images/aspen-grove-inn-700.webp",
         "type": "Hotel",
         "message": "Deluxe Cabins, RV Park/Campground, Fly Casting pond, Lodge and Open-air Pavilion. Beautiful property for weddings, reunions, and get-aways. Breakfast included with cabin stays."
       },
@@ -56,7 +66,9 @@
         "phone": "208-538-7226",
         "website": "https://www.sweetsurrender.com",
         "icon": "images/sweet-surrender-icon.webp",
-        "membershipLevel": "Bronze",
+        "membershipLevel": "Silver",
+        "image500": "https://rich-wilkyness.github.io/wdd230/chamber/images/sweet-surrender-500.webp",
+        "image700": "https://rich-wilkyness.github.io/wdd230/chamber/images/sweet-surrender-700.webp",
         "type": "Bakery",
         "message": "We are open Mon-Fri for breakfast (until 11:00) and lunch. Hours are 10:00-4:00. We offer a variety of homemade breads, pastries, and lunch selections. We also do wedding cakes, some catering, and candy making for specialty orders."
       },
@@ -67,7 +79,9 @@
         "website": "http://www.swanvalleyretreat.com/",
         "icon": "images/aspen-hills-retreat-icon.webp",
         "membershipLevel": "Silver",
-        "type": "Retreat Center",
+        "image500": "https://rich-wilkyness.github.io/wdd230/chamber/images/aspen-hills-retreat-500.webp",
+        "image700": "https://rich-wilkyness.github.io/wdd230/chamber/images/aspen-hills-retreat-700.webp",
+        "type": "Retreat",
         "message": "Aspen Hills Retreat can be your next unforgetable getaway! Set on 100 acres of meadows and Aspen/Pine  forest, this 4 bedroom, 2 bath home with huge deck is just perfect for relaxing and getting back in touch with nature. The seclusion and peace is great for families, reunions, weddings, fishing trips, and viewing wildlife. Skiing, swimming, horseback riding, ATV trails, and fishing are all within minutes! A vacationer's paradise in the mountains."
       }
     ]

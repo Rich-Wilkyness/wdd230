@@ -168,6 +168,27 @@ main {
 #third {
     text-align: center;
 }
+#forecast-section {
+    justify-content: center;
+}
+.forecast-container {
+    padding: .5rem;
+    border: .1rem solid var(--secondary-color);
+    background-color: var(--primary-color);
+    margin: 0 .5rem 1rem .5rem;
+}
+.forecast-container div:first-child{
+    font-weight: bold;
+    margin-bottom: .3rem;
+    background-color: var(--secondary-color);
+    color: var(--font-color-ondark);
+}
+
+.forecast-container img {
+    background-color: var(--secondary-color);
+    border-radius: 30%;
+    margin: .5rem;
+}
 #discover-main {
     display: flex;
     flex-direction: column;

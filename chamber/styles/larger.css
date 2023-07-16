@@ -26,6 +26,16 @@
 	#calendar {
 		align-self: start;
 	}
+
+	#forecast-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.forecast-container div:first-child{
+		font-weight: bold;
+	}
+
 	#discover-main {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
