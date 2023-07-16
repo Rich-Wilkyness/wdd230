@@ -41,8 +41,8 @@ function displayMembers(members) {
             businessImg.setAttribute('src', member.image700);
             businessImg.setAttribute('alt', `${member.name} Logo`);
             businessImg.setAttribute('loading', 'lazy');
-            businessImg.setAttribute('width', '700px');
-            businessImg.setAttribute('height', 'auto');
+            businessImg.setAttribute('width', '600');
+            businessImg.setAttribute('height', '400');
 
             website.setAttribute('href', member.website);
 
