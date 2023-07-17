@@ -63,6 +63,11 @@ nav a:hover {
     color: var(--font-color-onlight);
     background-color: var(--button-color);
 }
+nav a.active {
+    background-color: var(--primary-color);
+    color: var(--font-color-onlight);
+    font-weight: bold;
+}
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
@@ -97,11 +102,11 @@ nav a:hover {
     width: 360px;
     margin: 0 auto;
 }
-#hero h1 {
+#hero h2 {
     color: white;
     text-align: center;
 }
-#hero picture, #hero h1 {
+#hero picture, #hero h2 {
     grid-row: 1/2;
     grid-column: 1/2;
     justify-self: center;
@@ -113,18 +118,17 @@ main {
 #first {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-self: center;
-
 }
+
 
 #slideshow-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-	justify-items: flex-start;
     padding: 2rem;
     justify-items: center;
+    text-align: center;
+
 }
 #slideshow-container h2 {
     color: white;
@@ -176,6 +180,39 @@ main {
 
 #calendar {
     margin: 1rem;
+    text-align: center;
+}
+.event {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin: 1rem;
+    border: 1px solid var(--secondary-color);
+}
+.event div:first-child {
+    background-color: var(--secondary-color);
+    color: var(--font-color-ondark);
+    width: 75px;
+    height: 200px;
+}
+.event div:nth-child(2) {
+    display: none;
+}
+.event div:nth-child(3) {
+    background-color: var(--primary-color);
+    width: 400px;
+    height: 200px;
+}
+.event div:nth-child(4) {
+    background-color: var(--secondary-color);
+    color: var(--font-color-ondark);
+    width: 200px;
+    height: 200px;
+}
+.event div:nth-child(4) a {
+    text-decoration: none;
+    color: var(--font-color-ondark);
+    padding: 1rem;
 }
 .break {
     background-color: var(--secondary-color);
@@ -247,12 +284,6 @@ main {
 }
 #discover-info {
     justify-self: center;
-}
-#discover-info div {
-    width: 360px;
-    margin: 2rem;
-    padding: 1rem;
-    border: 5px solid var(--secondary-color);
 }
 #discover-gallery {
     justify-self: center;

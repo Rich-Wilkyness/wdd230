@@ -43,6 +43,9 @@
 	#calendar {
 		align-self: start;
 	}
+	.event div:nth-child(2) {
+		display: block;
+	}
 
 	#forecast-section {
 		display: flex;
@@ -57,8 +60,11 @@
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 	}
-	#discover-info div {
-		width: 500px;
+	#discover-info {
+		width: 80%;
+	}
+	.event {
+		text-align: center;
 	}
 	#discover-gallery img {
 		width: 700px;

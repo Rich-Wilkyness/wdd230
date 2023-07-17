@@ -9,6 +9,7 @@ menuButton.addEventListener('keydown', function (event) {
 });
 menuButton.addEventListener('click', function () {
     toggleMenu();
+    menuButton.classList.toggle('open');
   });
 
 function toggleMenu() {
