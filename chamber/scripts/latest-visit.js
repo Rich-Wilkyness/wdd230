@@ -4,11 +4,15 @@ const visitedElement = document.querySelector('#visited');
 
 let lastVisited;
 
+const storedValue = localStorage.getItem('last-visited');
+
 try {
   lastVisited = storedValue ? new Date(JSON.parse(storedValue)) : currentTime;
 } catch (error) {
   lastVisited = currentTime;
 }
+
+console.log(lastVisited);
 
 const timePassed = currentTime - lastVisited; //this is in miliseconds
 
