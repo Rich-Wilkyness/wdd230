@@ -12,8 +12,6 @@ try {
   lastVisited = currentTime;
 }
 
-console.log(lastVisited);
-
 const timePassed = currentTime - lastVisited; //this is in miliseconds
 
 localStorage.setItem('last-visited', JSON.stringify(currentTime));

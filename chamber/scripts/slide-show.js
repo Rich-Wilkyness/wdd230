@@ -70,8 +70,6 @@ let slideIndex = Math.floor(Math.random() * 4);
 function plusSlides(n) {
 showSlides(slideIndex += n);
 }
-
-
 function currentSlide(n) {
 showSlides(slideIndex = n);
 }
