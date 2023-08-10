@@ -10,6 +10,7 @@ font-family: 'Source Serif 4', serif; */
     --accent1-color: #fff;
     --accent2-color: #F7F3F5;
     --button-color: #FFD700;
+    --background-form-input: rgba(0, 0, 0, .1);
     /*
     --font-color: #d1d1d1;
     --primary-color: #003366 ;
@@ -201,6 +202,84 @@ section ul li a:hover {
     width: 100%;
     height: auto;
 }
+
+/* FORM */
+
+#form h1 {
+	color: var(--font-color-onlight)
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: var(--font-color-onlight);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: var(--font-color-onlight);
+    font-size: .8rem;
+}
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--secondary-color);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--background-form-input);
+}
+.slide {
+	color: var(--font-color-onlight);
+	display: block;
+	font-size: .8rem;
+	padding-top: 1rem;
+}
+
+#rating {
+	width: 350px;
+	margin-bottom: 0;
+}
+#range-value {
+	font-size: 2rem;
+	color: var(--font-color-onlight);
+}
+#range-values {
+	font-size: 1rem;
+	display: flex;
+	margin: 0 5px;
+	width: 350px;
+}
+#range-values option {
+	flex: 1 1 auto;
+	margin-right: 21px;
+}
+form input.submitButton {
+    border: none;
+    background-color: var(--button-color);
+    color: var(--font-color-onlight);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+	transition: transform 0.3s ease;
+
+}
+form input.submitButton:hover {
+	background-color: rgb(212, 31, 31);
+	transform: scale(1.1);
+}
+
 
 footer {
     font-family: var(--paragraph-font);
